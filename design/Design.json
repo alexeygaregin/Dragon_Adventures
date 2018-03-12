@@ -1,0 +1,803 @@
+{
+   "_typeName" : "CanvasLayout",
+   "_version" : "VER3",
+   "adjustment" : 0,
+   "box" : {
+      "_typeName" : "RelativeBox",
+      "height" : {
+         "_typeName" : "RelativeValue",
+         "type" : 0,
+         "value" : 0
+      },
+      "offset" : {
+         "_empty" : true
+      },
+      "width" : {
+         "_typeName" : "RelativeValue",
+         "type" : 0,
+         "value" : 0
+      }
+   },
+   "list" : [
+      {
+         "_name" : "back",
+         "_typeName" : "StaticTextureRect",
+         "box" : {
+            "_typeName" : "RelativeBox",
+            "height" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0
+            },
+            "offset" : {
+               "_empty" : true
+            },
+            "width" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0
+            }
+         },
+         "color" : [ 1, 1, 1, 1 ],
+         "imageName" : "backgroundmenu$.png",
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 1,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0
+            },
+            "vertAlign" : 1,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0
+            }
+         }
+      },
+      {
+         "_typeName" : "CanvasLayout",
+         "adjustment" : 0,
+         "box" : {
+            "_typeName" : "RelativeBox",
+            "height" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0
+            },
+            "offset" : {
+               "_empty" : true
+            },
+            "width" : {
+               "_typeName" : "RelativeValue",
+               "type" : 0,
+               "value" : 0
+            }
+         },
+         "list" : [
+            {
+               "_name" : "hplabel",
+               "_typeName" : "StaticLabel",
+               "adjustSize" : true,
+               "box" : {
+                  "_typeName" : "RelativeBox",
+                  "height" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0
+                  },
+                  "offset" : {
+                     "_empty" : true
+                  },
+                  "width" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0
+                  }
+               },
+               "color" : [ 1, 0, 0, 1 ],
+               "outlineColor" : [ 0, 0, 0, 1 ],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 27
+                  },
+                  "vertAlign" : 0,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  }
+               },
+               "properties" : {
+                  "_typeName" : "AlignProperties",
+                  "enableStacking" : false,
+                  "font" : {
+                     "_typeName" : "FontDesc",
+                     "family" : "Arial",
+                     "size" : 32
+                  },
+                  "horAlign" : 0,
+                  "vertAlign" : 0
+               },
+               "text" : "x7"
+            },
+            {
+               "_name" : "heart",
+               "_typeName" : "StaticTextureRect",
+               "box" : {
+                  "_typeName" : "PixelBox",
+                  "height" : 32,
+                  "width" : 32
+               },
+               "color" : [ 1, 1, 1, 1 ],
+               "imageName" : "heart.png",
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  },
+                  "vertAlign" : 0,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  }
+               }
+            },
+            {
+               "_name" : "field",
+               "_typeName" : "GameView",
+               "box" : {
+                  "_typeName" : "RelativeBox",
+                  "height" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0
+                  },
+                  "offset" : {
+                     "_empty" : true
+                  },
+                  "width" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 0,
+                     "value" : 0
+                  }
+               },
+               "gameBoxObj" : {
+                  "_typeName" : "InfiniteGameBox"
+               },
+               "list" : [
+                  {
+                     "_name" : "dragons",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [
+                        {
+                           "_name" : "dragon",
+                           "_typeName" : "ObjectConstruct",
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 0,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "PixelBox",
+                                 "height" : 90,
+                                 "width" : 90
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "dragon$.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        }
+                     ],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "enemyfireballs",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "redfireballs",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "bluefireballs",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "greenfireballs",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "backgrounds",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [
+                        {
+                           "_name" : "backgroundmenu",
+                           "_typeName" : "ObjectConstruct",
+                           "_visible" : false,
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 0,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "RelativeBox",
+                                 "height" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 },
+                                 "offset" : {
+                                    "_empty" : true
+                                 },
+                                 "width" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 }
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "backgroundmenu$.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 200
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        },
+                        {
+                           "_name" : "background1",
+                           "_typeName" : "ObjectConstruct",
+                           "_visible" : false,
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 1,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "RelativeBox",
+                                 "height" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 },
+                                 "offset" : {
+                                    "_empty" : true
+                                 },
+                                 "width" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 }
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "Back ground 1$.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -200
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        },
+                        {
+                           "_name" : "background2",
+                           "_typeName" : "ObjectConstruct",
+                           "_visible" : false,
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 2,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "RelativeBox",
+                                 "height" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 },
+                                 "offset" : {
+                                    "_empty" : true
+                                 },
+                                 "width" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 }
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "Back ground 2$.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 100
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        },
+                        {
+                           "_name" : "background3",
+                           "_typeName" : "ObjectConstruct",
+                           "_visible" : false,
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 3,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "RelativeBox",
+                                 "height" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 },
+                                 "offset" : {
+                                    "_empty" : true
+                                 },
+                                 "width" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 0,
+                                    "value" : 0
+                                 }
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "Back ground 3$.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -100
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        }
+                     ],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "goldcoins",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "silvercoins",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "enemydragons",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "food",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "shurikens",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "keys",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [
+                        {
+                           "_name" : "key",
+                           "_typeName" : "ObjectConstruct",
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 0,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "PixelBox",
+                                 "height" : 32,
+                                 "width" : 32
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "key$.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 100
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        }
+                     ],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "chests",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [
+                        {
+                           "_name" : "chest",
+                           "_typeName" : "ObjectConstruct",
+                           "animations" : [],
+                           "finder" : {
+                              "_typeName" : "FindableGeometryElement",
+                              "geom" : {
+                                 "_typeName" : "IdenticGeometry"
+                              }
+                           },
+                           "id" : 0,
+                           "position" : {
+                              "_typeName" : "PositionElement",
+                              "angle" : 0,
+                              "offset" : [ 0, 0 ],
+                              "scaleX" : 1,
+                              "scaleY" : 1
+                           },
+                           "selector" : {
+                              "_typeName" : "PressableAndClickableElement",
+                              "clickTime" : 500
+                           },
+                           "skin" : {
+                              "_typeName" : "StaticTextureRect",
+                              "box" : {
+                                 "_typeName" : "PixelBox",
+                                 "height" : 32,
+                                 "width" : 32
+                              },
+                              "color" : [ 1, 1, 1, 1 ],
+                              "imageName" : "chest$.png",
+                              "position" : {
+                                 "_typeName" : "AligningOffset",
+                                 "horAlign" : 1,
+                                 "horOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : -100
+                                 },
+                                 "vertAlign" : 1,
+                                 "vertOffset" : {
+                                    "_typeName" : "RelativeValue",
+                                    "type" : 1,
+                                    "value" : 0
+                                 }
+                              }
+                           },
+                           "transitionAnimations" : []
+                        }
+                     ],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "bosses",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  },
+                  {
+                     "_name" : "bossesfireballs",
+                     "_typeName" : "Layer",
+                     "index" : {
+                        "_typeName" : "FlatIndex",
+                        "keyType" : 2
+                     },
+                     "list" : [],
+                     "order" : {
+                        "_typeName" : "SortByIDOrder"
+                     }
+                  }
+               ],
+               "position" : {
+                  "_typeName" : "AligningOffset",
+                  "horAlign" : 1,
+                  "horOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  },
+                  "vertAlign" : 1,
+                  "vertOffset" : {
+                     "_typeName" : "RelativeValue",
+                     "type" : 1,
+                     "value" : 0
+                  }
+               }
+            }
+         ],
+         "position" : {
+            "_typeName" : "AligningOffset",
+            "horAlign" : 1,
+            "horOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0
+            },
+            "vertAlign" : 1,
+            "vertOffset" : {
+               "_typeName" : "RelativeValue",
+               "type" : 1,
+               "value" : 0
+            }
+         }
+      }
+   ],
+   "position" : {
+      "_typeName" : "AligningOffset",
+      "horAlign" : 1,
+      "horOffset" : {
+         "_typeName" : "RelativeValue",
+         "type" : 1,
+         "value" : 0
+      },
+      "vertAlign" : 1,
+      "vertOffset" : {
+         "_typeName" : "RelativeValue",
+         "type" : 1,
+         "value" : 0
+      }
+   }
+}
