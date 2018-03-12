@@ -1,0 +1,4 @@
+2 shuriken 0 100
+4 shuriken 0 0
+6 shuriken 0 -100
+10 firstboss 0 0
